@@ -4,9 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>exemplo</title>
+    <title>Player</title>
     <link rel="stylesheet" href="./style.css">
-
 </head>
 
 <body>
@@ -15,37 +14,36 @@
 
         <h1>Reprodutor de musica</h1>
 
-        <div id="Menu">
-            <button class="tecla 1 item"><img src="./icons8-reproduzir-50.png " width="25px" alt="imagem"></button>
-            <button class="teclap 1 item"><img src="./icons8-pause-50.png" width="25px" alt="imagem"></button>
-            <p class="item">ELE ME AMOU PRIMEIRO</p>
-        </div>
+        <button class="tecla 0" id="t0">
+            ELE ME AMOU PRIMEIRO
+        </button>
 
-        <div id="Menu">
-            <button class="tecla 2 item"><img src="./icons8-reproduzir-50.png " width="25px" alt="imagem"></button>
-            <button class="teclap 2 item"><img src="./icons8-pause-50.png" width="25px" alt="imagem"></button>
-            <p class="item">SÓ TU ÉS SANTO</p>
-        </div>
+        <button class="tecla 1" id="t1">
+            SÓ TU ÉS SANTO
+        </button>
 
-        <div id="Menu">
-            <button class="tecla 3 item"><img src="./icons8-reproduzir-50.png " width="25px" alt="imagem"></button>
-            <button class="teclap 3 item"><img src="./icons8-pause-50.png" width="25px" alt="imagem"></button>
-            <p class="item">MEUS VOTOS</p>
-        </div>
+        <button class="tecla 2" id="t2">
+            MEUS VOTOS
+        </button>
 
-        <div id="Menu">
-            <button class="tecla 4 item"><img src="./icons8-reproduzir-50.png " width="25px" alt="imagem"></button>
-            <button class="teclap 4 item"><img src="./icons8-pause-50.png" width="25px" alt="imagem"></button>
-            <p class="item">NÃO HÁ AMOR IGUAL</p>
-        </div>
+        <button class="tecla 3" id="t3">
+            NÃO HÁ AMOR IGUAL
+        </button>
 
-        <audio id="musica_1" src="ELE ME AMOU PRIMEIRO _ MORADA (AO VIVO).mp3"></audio>
-        <audio id="musica_2" src="SÓ TU ÉS SANTO - UMA COISA - DEIXA QUEIMAR - QUANDO ELE VEM _ MORADA (AO VIVO).mp3"></audio>
-        <audio id="musica_3" src="MEUS VOTOS - DIA E NOITE _ MORADA (AO VIVO).mp3"></audio>
-        <audio id="musica_4" src="NÃO HÁ AMOR IGUAL _ MORADA (AO VIVO).mp3"></audio>
+        <audio id="musica_0" src="ELE ME AMOU PRIMEIRO _ MORADA (AO VIVO).mp3"></audio>
+        <audio id="musica_1" src="SÓ TU ÉS SANTO MORADA .mp3"></audio>
+        <audio id="musica_2" src="MEUS VOTOS - DIA E NOITE _ MORADA.mp3"></audio>
+        <audio id="musica_3" src="NÃO HÁ AMOR IGUAL _ MORADA .mp3"></audio>
+
+        <div class="controle">
+            <button class="botao anterior"> <img id="img1" src="./icons8-duplo-para-a-esquerda-50.png" width="25px"
+                    alt=""></button>
+            <button class="botao play"> <img id="img2" src="./icons8-reproduzir-30.png" width="30px" alt=""></button>
+            <button class="botao proxima"> <img id="img3" src="./icons8-duplo-para-a-esquerda-50.png" width="25px"
+                    alt=""></button>
+        </div>
 
     </div>
-
     <script src="./main.js"></script>
 
 </body>
