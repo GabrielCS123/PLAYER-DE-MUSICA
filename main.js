@@ -7,7 +7,6 @@ function pause(seletor) {
 }
 
 const listaDeTeclas = document.querySelectorAll('.tecla');
-const listaDeTeclasp = document.querySelectorAll('.teclap');
 
 for (let index = 0; index < listaDeTeclas.length; index++) {
     
