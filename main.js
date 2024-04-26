@@ -77,13 +77,14 @@ function anterior() {
             document.querySelector(`#musica_${proximaMusica}`).currentTime = 0;
             document.querySelector(`#t${proximaMusica}`).classList.remove('ativa');
 
-            play(`#musica_${proximaMusica-1}`);
-            document.querySelector(`#t${proximaMusica-1}`).classList.add('ativa');
+            play(`#musica_${proximaMusica - 1}`);
+            document.querySelector(`#t${proximaMusica - 1}`).classList.add('ativa');
         }
 
         proximaMusica--;
 
     }
+
 }
 
 
@@ -109,7 +110,21 @@ function playPause() {
 
 document.querySelector('.play').onclick = function () {
     playPause();
+    alterarIcone();
 };
+
+// Alterar icone
+
+function alterarIcone() {
+    const imagem = document.querySelector('#img2');
+
+    if (tocando) {
+        imagem.src = 'icons8-pause-50.png';
+    } else {
+        imagem.src = 'icons8-reproduzir-30.png';
+    }
+}
+
 
 // parte que aperta na tela
 
