@@ -86,3 +86,15 @@ h1 {
     background-color: #0d3240a9;
     color: #DFEBF2;
 }
+
+@media (max-width: 720px) {
+    body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #container {
+        top: 7%;
+        width: 80%;
+    }
+}
